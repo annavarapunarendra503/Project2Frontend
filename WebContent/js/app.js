@@ -34,7 +34,7 @@
 		        controller:'BlogPostDetailsController'
 	        	})
 	        	
-	        /*	.when('/savejob',{
+	        	.when('/savejob',{
 	        		templateUrl:'views/jobform.html',
 	        		controller:'JobController'
 	        	})
@@ -47,5 +47,5 @@
                 templateUrl : 'views/Home.html',
                 controller  : 'HomeController'
             })
-            */
+            
     });
