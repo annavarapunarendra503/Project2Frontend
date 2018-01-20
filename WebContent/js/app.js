@@ -34,6 +34,13 @@
 		        controller:'BlogPostDetailsController'
 	        	})
 	        	
+	        	.when('/profilepicture', {
+		templateUrl : 'views/profilepic.html'
+	}).when('/edituserprofile', {
+		templateUrl : 'views/updateprofile.html',
+		controller : 'UserController'
+	})
+	        	
 	        	.when('/savejob',{
 	        		templateUrl:'views/jobform.html',
 	        		controller:'JobController'
@@ -42,6 +49,27 @@
 	        		templateUrl:'views/jobtitle.html',
 	        		controller:'JobController'
 	        	})
+	        	
+	        	.when('/suggestedusers',{
+		templateUrl:'views/suggesteduser.html',
+		controller:'FriendController'
+	})
+	.when('/pendingrequests',{
+		templateUrl:'views/pendingrequests.html',
+		controller:'FriendController'
+	})
+	.when('/friends',{
+		templateUrl:'views/listoffriends.html',
+		controller:'FriendController'
+	})
+	 .when('/chat',{
+	        		 templateUrl:'views/chat.html',
+	        		 controller:'ChatCtrl'
+	        	 })
+	        	
+	        	
+	        	
+	        	
             // route for the contact page
             .when('/Home', {
                 templateUrl : 'views/Home.html',

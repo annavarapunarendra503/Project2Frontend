@@ -21,10 +21,22 @@ usersService.logout=function(user){
 	return $http.get(BASSE_URL +"/logout",user)
 
 }
+
+
+usersService.getUserByUsername=function(){
+    return $http.get(BASSE_URL +"/getuserdetails")
+    }
+
+
+usersService.updateUserProfile=function(user){
+    return $http.put(BASSE_URL +"/updateprofile",user)
+    }
+
 /*
 userService.login=function(user){
 	return $http.post(BASSE_URL +"/home",user)
 }*/
+
 
     
 return usersService;
